@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <BrowserRouter basename='/book'>
+    <BrowserRouter basename='/Book-Shop'>
       <Header />
       <Routes>
         <Route exact path="/" element={<BookList />} />
