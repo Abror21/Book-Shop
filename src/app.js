@@ -12,7 +12,7 @@ const App = () => {
     <BrowserRouter basename='/Book-Shop'>
       <Header />
       <Routes>
-        <Route exact path="/" element={<BookList />} />
+        <Route index path="/" element={<BookList />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/:id" element={<BookDetails />} />
         <Route path="*" element={<div className="container text-center"><h1>Page Not Found</h1></div>} />
